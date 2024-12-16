@@ -1,0 +1,240 @@
+/* Hero Section */
+.radar-hero-section {
+    background: url("images/radarklub.jpg") no-repeat center center/cover;
+    padding: 6rem 2rem;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.radar-hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.radar-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.radar-hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.radar-hero-content p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    color: #ddd;
+}
+
+.radar-cta-button {
+    background: #f39c12;
+    color: #111;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.radar-cta-button:hover {
+    background: #d17f0e;
+}
+
+/* Main Layout */
+.radar-main-layout {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 2rem auto;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+/* Latest News */
+.radar-latest-news {
+    flex: 2 1 60%;
+}
+
+.radar-latest-news h2 {
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.radar-news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 1.5rem;
+}
+
+.radar-news-item {
+    background: #222;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    color: #ddd;
+}
+
+.radar-news-item img {
+    width: 100%;
+    display: block;
+}
+
+.radar-news-item h3 {
+    font-size: 1.2rem;
+    margin: 1rem;
+    color: #fff;
+}
+
+.radar-news-item p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin: 0 1rem 1rem;
+    color: #ccc;
+}
+
+.radar-read-more {
+    display: inline-block;
+    margin: 0 1rem 1rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: #f39c12;
+    transition: color 0.3s;
+}
+
+.radar-read-more:hover {
+    color: #d17f0e;
+}
+
+/* Sidebar */
+.radar-aside {
+    flex: 1 1 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.radar-aside section {
+    background: #222;
+    padding: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    color: #ddd;
+}
+
+.radar-aside h2 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+/* Blog Section */
+.radar-blog-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
+}
+
+.radar-blog-list li {
+    margin-bottom: 0.5rem;
+}
+
+.radar-blog-list a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.radar-blog-list a:hover {
+    color: #f39c12;
+}
+
+.radar-view-all,
+.radar-listen-now {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    color: #f39c12;
+}
+
+.radar-view-all:hover,
+.radar-listen-now:hover {
+    color: #d17f0e;
+}
+
+/* Newsletter */
+.radar-newsletter-section p {
+    margin-bottom: 1rem;
+    color: #ccc;
+}
+
+.radar-newsletter-section form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.radar-newsletter-section input[type="email"] {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #444;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    background: #333;
+    color: #ccc;
+}
+
+.radar-newsletter-section button {
+    background: #f39c12;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: #111;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.radar-newsletter-section button:hover {
+    background: #d17f0e;
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+   
+
+    .radar-main-layout {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+
+    .radar-aside {
+        order: -1;
+    }
+}
+
+@media (max-width: 500px) {
+    .radar-hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .radar-hero-content p {
+        font-size: 1rem;
+    }
+
+    .radar-cta-button {
+        font-size: 0.9rem;
+    }
+}

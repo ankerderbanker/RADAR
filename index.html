@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RADAR Aarhus | Program & Events - Livemusik og Koncerter</title>
+  <meta name="description" content="Udforsk RADARs aktuelle program og kommende events i Aarhus. Oplev nyt talent, forskellige genrer og unikke musikoplevelser. Se vores koncertprogram, nyheder, arkiv, og kontaktoplysninger." />
+  <meta name="keywords" content="RADAR, Aarhus, live musik, koncerter, events, program, nyheder, arkiv" />
+  <link rel="stylesheet" href="css/css.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/logofull.png" alt="RADAR fuldt logo" class="full-logo" />
+      <img src="images/logocollapse.png" alt="RADAR kollapset logo" class="collapsed-logo" />
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Program</a></li>
+      <li>
+        <a href="omradar.html">Events</a>
+        <ul class="dropdown">
+          <li><a href="team.html">Alle events</a></li>
+          <li><a href="history.html">Radar Music_Lab</a></li>
+          <li><a href="history.html">#venuehack</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="nyheder.html">Nyheder</a>
+        <ul class="dropdown">
+          <li><a href="upcoming.html">Blog</a></li>
+          <li><a href="past.html">Podcast</a></li>
+          <li><a href="past.html">Nyhedsbrev</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="omradar.html">Om RADAR</a>
+        <ul class="dropdown">
+          <li><a href="team.html">Vores ambition</a></li>
+          <li><a href="history.html">Vores Historie</a></li>
+          <li><a href="history.html">Sociale medier</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="arkiv.html">Arkiv</a>
+        <ul class="dropdown">
+          <li><a href="galleri.html">Galleri</a></li>
+          <li><a href="past.html">Tidligere arrangementer</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="contact.html">Kontakt</a>
+        <ul class="dropdown">
+          <li><a href="galleri.html">Bliv frivillig</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  
+  <!-- Extended Parallax Container -->
+  <div class="parallax-container">
+    <!-- Background Layers -->
+    <div class="parallax-layer layer1"></div>
+    <div class="parallax-layer layer2"></div>
+    <div class="parallax-layer layer3"></div>
+    <div class="parallax-layer layer1 second"></div>
+    <div class="parallax-layer layer2 second"></div>
+    <div class="parallax-layer layer3 second"></div>
+
+    <!-- Page Content -->
+    <div class="page-content">
+      <main>
+        <div class="page-wrapper">
+          <div class="post-slider">
+            <i class="fa fa-chevron-left prev" aria-hidden="true"></i>
+            <i class="fa fa-chevron-right next" aria-hidden="true"></i>
+            <div class="post-wrapper">
+
+              <!-- Post 1 -->
+              <div class="post">
+                <img
+                  src="images/gorgeous_presse1.jpg"
+                  alt="Pressebillede af Gorgeous, koncert 14.11.2024"
+                  class="slider-image"
+                />
+                <div class="title-overlay">GORGEUS 14.11.2024</div>
+                <div class="overlay">
+                  <div class="koncerttitel">
+                    <label for="koncerttitel">GORGEUS <br><br>Dato: 14/11 2024 <br>Tid: kl 19:30</label>
+                  </div>
+                  <div class="button-container">
+                    <button class="btn buy-tickets">Køb biletter</button>
+                    <button class="btn read-more">Læs mere</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Post 2 -->
+              <div class="post">
+                <img
+                  src="images/otooto.jpg"
+                  alt="Pressebillede af OTO OTO, koncert 02.10.2024"
+                  class="slider-image"
+                />
+                <div class="title-overlay">OTO OTO 14.11.2024</div>
+                <div class="overlay">
+                  <div class="koncerttitel">
+                    <label for="koncerttitel">OTO OTO <br><br>Dato: 2/10 2024 <br>Tid: kl 19:30</label>
+                  </div>
+                  <div class="button-container">
+                    <button class="btn buy-tickets">Køb biletter</button>
+                    <button class="btn read-more">Læs mere</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Post 3 -->
+              <div class="post">
+                <img
+                  src="images/clothingclub.jpg"
+                  alt="Pressebillede af Clothing Club, koncert 14.11.2024"
+                  class="slider-image"
+                />
+                <div class="title-overlay">CLOTHING CLUB 14.11.2024</div>
+                <div class="overlay">
+                  <div class="koncerttitel">
+                    <label for="koncerttitel">CLOTHING CLUB <br><br>Dato: 14/11 2024 <br>Tid: kl 19:30</label>
+                  </div>
+                  <div class="button-container">
+                    <button class="btn buy-tickets">Køb biletter</button>
+                    <button class="btn read-more">Læs mere</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <h1>PROGRAM</h1>
+      <section class="dateselect">
+        
+        <!-- Month Selector -->
+        <div class="selector">
+          <label for="month-select">Måned:</label>
+          <select id="month-select">
+            <option value="" disabled selected>Vælg måned</option>
+            <option value="january">Januar</option>
+            <option value="february">Februar</option>
+            <option value="march">Marts</option>
+            <option value="april">April</option>
+            <option value="may">Maj</option>
+            <option value="june">Juni</option>
+            <option value="july">Juli</option>
+            <option value="august">August</option>
+            <option value="september">September</option>
+            <option value="october">Oktober</option>
+            <option value="november">November</option>
+            <option value="december">December</option>
+          </select>
+        </div>
+
+        <!-- Genre Selector -->
+        <div class="selector">
+          <label for="genre-select">Genre:</label>
+          <select id="genre-select">
+            <option value="" disabled selected>Vælg genre</option>
+            <option value="rock">Rock</option>
+            <option value="pop">Pop</option>
+            <option value="jazz">Jazz</option>
+            <option value="classical">Klassisk</option>
+            <option value="electronic">Elektronisk</option>
+          </select>
+        </div>
+      </section>
+
+      <div class="concert-interface">
+        <!-- Month Sections -->
+        <div class="month-section">
+          <h2>Januar</h2>
+          <div class="concert-row">
+            <div class="concert-card">
+              <div
+                class="concert-imagemonths"
+                style="background-image: url('images/gorgeous_presse1.jpg');"
+                aria-label="Pressebillede af Gorgeous, koncert i Januar"
+              ></div>
+              <div class="concert-card-overlay">
+                <h3>GORGEUS</h3>
+                <p>Jan 15</p>
+                <button>Køb Billetter</button>
+              </div>
+            </div>
+
+            <div class="concert-card">
+              <div
+                class="concert-imagemonths"
+                style="background-image: url('images/clothingclub.jpg');"
+                aria-label="Pressebillede af Clothing Club, koncert i Januar"
+              ></div>
+              <div class="concert-card-overlay">
+                <h3>CLOTHING CLUB</h3>
+                <p>Jan 15</p>
+                <button>Køb Billetter</button>
+              </div>
+            </div>
+
+            <div class="concert-card">
+              <div
+                class="concert-imagemonths"
+                style="background-image: url('images/otooto.jpg');"
+                aria-label="Pressebillede af OTO OTO, koncert i Januar"
+              ></div>
+              <div class="concert-card-overlay">
+                <h3>OTO OTO</h3>
+                <p>Jan 20</p>
+                <button>Køb Billetter</button>
+              </div>
+            </div>
+
+            <div class="concert-card">
+              <div
+                class="concert-imagemonths"
+                style="background-image: url('images/gorgeous_presse1.jpg');"
+                aria-label="Pressebillede af Gorgeous, koncert i Januar"
+              ></div>
+              <div class="concert-card-overlay">
+                <h3>GORGEUS</h3>
+                <p>Jan 15</p>
+                <button>Køb Billetter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="month-section">
+          <h2>Februar</h2>
+          <div class="concert-row">
+            <div class="concert-card">
+              <div
+                class="concert-imagemonths"
+                style="background-image: url('images/gorgeous_presse1.jpg');"
+                aria-label="Pressebillede af Gorgeous, koncert i Februar"
+              ></div>
+              <div class="concert-card-overlay">
+                <h3>GORGEUS</h3>
+                <p>Jan 15</p>
+                <button>Køb Billetter</button>
+              </div>
+            </div>
+
+            <div class="concert-card">
+              <div
+                class="concert-imagemonths"
+                style="background-image: url('images/yngelquade.png');"
+                aria-label="Pressebillede af Quade + Yngel, koncert i Februar"
+              ></div>
+              <div class="concert-card-overlay">
+                <h3>Radar & Voxhall præsenterer: Quade + Yngel</h3>
+                <p>Feb 22</p>
+                <button>Køb Billetter</button>
+              </div>
+            </div>
+
+            <div class="concert-card">
+              <div
+                class="concert-imagemonths"
+                style="background-image: url('images/sylomsorg.png');"
+                aria-label="Pressebillede af SYL + Omsorg, koncert i Februar"
+              ></div>
+              <div class="concert-card-overlay">
+                <h3>SYL + Omsorg</h3>
+                <p>Feb 22</p>
+                <button>Køb Billetter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="month-section">
+          <h2>Marts</h2>
+          <div class="concert-row">
+            <div class="concert-card">
+              <div
+                class="concert-imagemonths"
+                style="background-image: url('images/revealpartysupportmerry.jpg');"
+                aria-label="Pressebillede af REVEAL PARTY / support Merry, koncert i Marts"
+              ></div>
+              <div class="concert-card-overlay">
+                <h3>REVEAL PARTY / support Merry</h3>
+                <p>Jan 15</p>
+                <button>Køb Billetter</button>
+              </div>
+            </div>
+            <div class="concert-card">
+              <div
+                class="concert-imagemonths"
+                style="background-image: url('images/concert4.jpg');"
+                aria-label="Pressebillede af Concert 4, koncert i Marts"
+              ></div>
+              <div class="concert-card-overlay">
+                <h3>Concert 4</h3>
+                <p>Feb 22</p>
+                <button>Køb Billetter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <p>&copy; RADAR. Alle rettigheder forbeholdes.</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Program</a></li>
+            <li><a href="nyheder.html">Nyheder</a></li>
+            <li><a href="omradar.html">Om RADAR</a></li>
+            <li><a href="arkiv.html">Arkiv</a></li>
+            <li><a href="index.html">Kontakt</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
+  <script src="js/js.js"></script>
+</body>
+</html>
