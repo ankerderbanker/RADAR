@@ -11,7 +11,7 @@ $('.post-wrapper').slick({
       breakpoint: 1024,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         infinite: true,
         dots: true
       }
@@ -20,7 +20,7 @@ $('.post-wrapper').slick({
       breakpoint: 600,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 2
+        slidesToScroll: 1
       }
     },
     {
@@ -69,7 +69,7 @@ window.addEventListener('resize', updateNavbarState);
 window.addEventListener('scroll', () => {
   const scrollPosition = window.scrollY;
 
-  if (window.innerWidth > 600) {
+  if (window.innerWidth > 1000) {
     if (scrollPosition > collapseThreshold) {
       navbar.classList.add('collapsed');
     } else {

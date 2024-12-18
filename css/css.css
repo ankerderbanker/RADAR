@@ -105,7 +105,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: #ff5722;
+  background-color: #ff2222;
   transition: width 0.3s ease;
 }
 
@@ -313,6 +313,7 @@ transform: translateY(40px);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+ 
 }
 
 .selector label {
@@ -331,11 +332,12 @@ transform: translateY(40px);
   color: white;
   outline: none;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #000000;
 }
 
 .selector select:focus,
 .selector input:focus {
-  border-color: #ff5722;
+  border-color: #ff2222;
   box-shadow: 0 0 5px rgba(255, 87, 34, 0.5);
 }
 
@@ -396,6 +398,15 @@ transform: translateY(40px);
   transition: transform 0.3s ease;
 }
 
+@media (max-width: 1000px) {
+  .concert-card {
+   height: 20vh;
+    width: 24vh;
+    background-position: center center; /* Ensure the image remains centered */
+    /* You can add or modify other properties as needed */
+  }
+}
+
 .concert-card:hover {
   transform: scale(1.05);
 }
@@ -414,6 +425,17 @@ transform: translateY(40px);
   box-sizing: border-box;
 }
 
+
+@media (max-width: 1000px) {
+  .concert-card-overlay {
+    padding: 8px;
+   
+    /* Optional: Adjust font size for better readability */
+    font-size: 1rem;
+  }
+}
+
+
 .concert-card-overlay h3,
 .concert-card-overlay p,
 .concert-card-overlay button {
@@ -421,7 +443,7 @@ transform: translateY(40px);
 }
 
 .concert-card-overlay button {
-  background-color: #ff5722;
+  background-color: #ff2222;
   border: none;
   color: white;
   padding: 10px 15px;
@@ -429,6 +451,20 @@ transform: translateY(40px);
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
+@media (max-width: 1000px) {
+  .concert-card-overlay button {
+    padding: 8px;
+   
+    /* Optional: Adjust font size for better readability */
+    font-size: 0.6rem;
+  }
+}
+
+
+
+
+
 
 .concert-card-overlay button:hover {
   background-color: #e64a19;
@@ -441,6 +477,8 @@ transform: translateY(40px);
   background-position: center;
   position: relative;
 }
+
+
 
 /* Footer */
 .footer {
@@ -562,6 +600,29 @@ main {
   padding: 20px;
 }
 
+/* Media query for screens 600px wide or smaller */
+@media (max-width: 600px) {
+  .overlay {
+    gap: 15px; /* Reduce space between elements */
+    padding: 15px; /* Decrease overall padding */
+  }
+
+  /* If there are child elements like headings, paragraphs, or buttons, adjust their styles as well */
+  .overlay {
+    font-size: 0.6rem; /* Smaller heading */
+  }
+
+  .overlay p {
+    font-size: 0.5rem; /* Smaller paragraph text */
+    text-align: center; /* Center-align text for better readability */
+  }
+
+  .overlay button {
+    padding: 8px 12px; /* Smaller buttons */
+    font-size: 0.5rem; /* Adjust button text size */
+  }
+}
+
 .button-container {
   display: flex;
   flex-direction: row;
@@ -603,7 +664,7 @@ main {
 }
 
 .btn.read-more {
-  background-color: #3498db;
+  background-color: rgb(33, 65, 92);
   color: #fff;
 }
 
@@ -618,6 +679,17 @@ main {
   border-radius: 5px;
   opacity: 1;
   transition: opacity 0.3s ease;
+}
+
+/* 600px wide or smaller */
+@media (max-width: 600px) {
+  .title-overlay {
+    bottom: 5px; 
+    left: 5px;
+    padding: 8px 12px; 
+    font-size: 1.2rem; 
+    border-radius: 4px; 
+  }
 }
 
 .post:hover .title-overlay {
