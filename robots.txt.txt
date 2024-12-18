@@ -1,0 +1,10 @@
+# robots.txt for http://radar.ankersand.dk/index.html
+
+# Blokerer arkiv.html for alle søgemaskiner
+User-agent: *
+Disallow: /arkiv.html
+
+# Tillad adgang til alle andre sider
+Allow: /
+
+
